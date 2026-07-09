@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "grangerspy"
+version = "0.1.0"
+description = "Granger-causality spectrum estimation in the frequency domain (unconditional and conditional)"
+readme = "README.md"
+license = "MIT"
+license-files = ["LICENSE"]
+authors = [{ name = "Meng Yang" }]
+requires-python = ">=3.8"
+dependencies = [
+    "numpy>=1.21",
+    "pandas>=1.3",
+    "statsmodels>=0.13",
+    "matplotlib>=3.4",
+]
+keywords = ["granger-causality", "time-series", "frequency-domain", "VAR", "spectrum"]
+
+[tool.setuptools]
+packages = ["grangerspy"]
